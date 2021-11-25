@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/CSS/Shared/Shared.min.css" rel="stylesheet" />
+    <link href="~/plugin/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+
+    <title>Pousada Beira Mar</title>
+    <!--@Styles.Render("~/Content/css")-->
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="relativation">
+            <div class="header-navbar-boomerang">
+                <nav class="navbar affix" role="navigation">
+                    <div class="header-info" style="width: 100%; padding: 7px">
+                        <div class="container">
+                            <div class="info-bar">
+                                <div class="infos-contato">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="menu row">
+                            <img style="width: 130px" src="~/Images/Logo/logo_pousada.png" />
+
+                            <div class="opcoes-menu">
+                                <span>Início</span>
+                                <span>Reservar</span>
+                                <span>Acomodações</span>
+                                <span>Contato</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ng-scope" ng-controller="SubscribeFormController">
+                    <input type="hidden" ng-init="Origin = 'NewsLetter'" ng-model="Origin" class="ng-pristine ng-untouched ng-valid">
+                    <div class="widget newsletter">
+                        <h3>Deseja receber promoções no seu email?</h3>
+                        <p></p>
+
+                        <form id="email-form" class="form-inline ng-pristine ng-valid" novalidate="novalidate">
+                            <input type="hidden" id="FormWidgetId" ng-init="FormWidgetId = '5d6d234eacb694252cf52968'" value="5d6d234eacb694252cf52968">
+                            <div class="input-group">
+                                <input ng-model="Email" type="text" class="form-control ng-pristine ng-untouched ng-valid" placeholder="Cadastre-se!" id="email-input">
+                                <span class="input-group-btn">
+                                    <button ng-click="SendSubsricbe()" class="btn base-background" type="submit">QUERO RECEBER PROMOÇÕES</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="content-heading text-left">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="widget navigation-simple">
+                        <h3>Sobre o Hotel</h3>
+                        <ul>
+                            <li style="margin-bottom: 10px">
+                                <a target="_blank" href="https://hbook.hsystem.com.br/booking?companyId=5d51ec6eab41d419d4afad7e&amp;utm_source=website&amp;utm_medium=book-button&amp;utm_campaign=website">
+                                    Reservas Online
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 10px">
+                                <a target="_self" href="/acomodacoes">
+                                    Acomodações
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 10px">
+                                <a target="_self" href="/contato">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="widget social-media">
+                        <h3>Mídias Sociais</h3>
+
+                        <ul>
+                            <li class="facebook">
+                                <a target="_blank" href="https://www.facebook.com/novapousadailhabela/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="instagram">
+                                <a target="_blank" href="https://www.instagram.com/pousadailhabela/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="youtube">
+                                <a target="_blank" href="https://www.youtube.com/channel/UCQQBZuYvMFFDUSwLSlSEAAg">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="whatsapp">
+                                <a target="_blank" href="https://api.whatsapp.com/send?l=pt_BR&amp;phone=5512996810285">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row"><hr></div>
+            <div class="row">
+                <br />
+                <div class="col-lg-12 col-sm-12 copyright text-center">
+                    <small>2021 | Pousada Beira Mar</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

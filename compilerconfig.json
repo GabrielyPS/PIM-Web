@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/CSS/Home/Home_Index.css",
+    "inputFile": "Content/CSS/Home/Home_Index.less"
+  },
+  {
+    "outputFile": "Content/CSS/Shared/Shared.css",
+    "inputFile": "Content/CSS/Shared/Shared.less"
+  }
+]
