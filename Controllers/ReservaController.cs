@@ -1,6 +1,4 @@
-﻿using ClassLibrary1.Entities;
-using PIM_Web.Views.Reserva;
-using System;
+﻿using System;
 using System.Web.Mvc;
 
 namespace PIM_Web.Controllers
