@@ -191,7 +191,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Acomodacoes\Acomodacoes_Index.cshtml" />
-    <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\Contato\Contato_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
