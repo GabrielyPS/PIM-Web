@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassLibrary1.Entities;
+using PIM_Web.Views.Reserva;
+using System;
 using System.Web.Mvc;
 
 namespace PIM_Web.Controllers
@@ -11,7 +13,7 @@ namespace PIM_Web.Controllers
             return View();
         }
 
-       /*[HttpPost]
+        [HttpPost]
         public ActionResult Create(ReservaDto modelDto)
         {
             try
@@ -37,6 +39,6 @@ namespace PIM_Web.Controllers
             {
                 return View();
             }
-        }*/
+        }
     }
 }
