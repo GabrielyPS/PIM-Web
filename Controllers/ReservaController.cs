@@ -1,5 +1,5 @@
-﻿using PIM_Web.Views.Reserva;
-using Service.Entities;
+﻿using ClassLibrary1.Entities;
+using PIM_Web.Views.Reserva;
 using System;
 using System.Web.Mvc;
 
