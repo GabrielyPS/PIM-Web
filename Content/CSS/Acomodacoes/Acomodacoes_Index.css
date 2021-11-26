@@ -1,4 +1,14 @@
-﻿#Acomodacoes .header-navbar-boomerang2 .navbar2 {
+﻿#Acomodacoes p,
+#Acomodacoes span,
+#Acomodacoes a,
+#Acomodacoes div,
+#Acomodacoes li,
+#Acomodacoes ul,
+#Acomodacoes input,
+#Acomodacoes button {
+  font-family: 'Montserrat', sans-serif !important;
+}
+#Acomodacoes .header-navbar-boomerang2 .navbar2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,6 +35,20 @@
   z-index: 999;
   background: #00a859 !important;
   border: none;
+}
+#Acomodacoes .room-list-item .room-heading .bed-icon {
+  float: left;
+  font-size: 24px;
+  background: #00A859;
+}
+#Acomodacoes .room-list-item .room-heading {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #00A859;
+  height: 50px;
+}
+#Acomodacoes .room-list-item .room-heading .bed-icon i {
+  padding: 8px 13px;
+  display: inline-block;
 }
 #Acomodacoes .box-banner {
   height: 60px;
