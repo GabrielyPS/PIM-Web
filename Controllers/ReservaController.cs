@@ -11,7 +11,7 @@ namespace PIM_Web.Controllers
             return View();
         }
 
-        [HttpPost]
+       /*[HttpPost]
         public ActionResult Create(ReservaDto modelDto)
         {
             try
@@ -37,6 +37,6 @@ namespace PIM_Web.Controllers
             {
                 return View();
             }
-        }
+        }*/
     }
 }
