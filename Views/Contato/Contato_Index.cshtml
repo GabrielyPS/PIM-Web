@@ -4,6 +4,97 @@
 }
 
 <div id="Contato">
-    
+    <section class="custom-section-5d6d234eacb694252cf52976 " id="section-5d6d234eacb694252cf52976">
+        <div class="container ">
+            <div class="row">
+
+                <!--Widgets Left SideBar-->
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="content-heading ">
+
+
+                                <h3 text-transform:uppercase;"="">Pousada Beira Mar</h3>
+
+
+
+                                <p>
+                                    Rua Lincoln Feliciano, 310 - Perequê<br>
+                                    Ilhabela, São Paulo - Brasil
+                                </p>
+
+
+
+                                <p>
+                                    <b>Telefone:</b> +55 (12) 3896-8027<br>
+                                    <b>Reservas:</b> reservas@pousadabeiramar.com<br>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="widget maps-embed">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29203.199588585634!2d-45.359443!3d-23.804373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37a7277691be7b40!2sPousada%20Ilhabela!5e0!3m2!1spt-BR!2sbr!4v1567521261200!5m2!1spt-BR!2sbr" style="border:0" allowfullscreen="" width="100%" height="237" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Widgets Body-->
+                <!--Widgets Right SideBar-->
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="widget contact-form ng-scope" ng-controller="ContactFormController">
+                                <form id="form-5d6d234eacb694252cf5297d" class="ng-pristine ng-valid" novalidate="novalidate">
+                                    <input type="hidden" id="FormWidgetId" ng-init="FormWidgetId = '5d6d234eacb694252cf5297d'" value="5d6d234eacb694252cf5297d">
+
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <span class="error pull-right m-t-none ng-hide" ng-show="NameError">*Campo Obrigatorio</span>
+                                        <input class="form-control ng-pristine ng-untouched ng-valid" id="name-5d6d234eacb694252cf5297d" ng-model="Name" placeholder="Digite seu nome" type="text">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Telefone</label>
+                                                <span class="error pull-right m-t-none ng-hide" ng-show="PhoneError">*Campo Obrigatorio</span>
+                                                <input class="form-control ng-pristine ng-untouched ng-valid" id="phone-5d6d234eacb694252cf5297d" ng-model="Phone" placeholder="Digite seu telefone" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>E-mail</label>
+                                            <span class="error pull-right m-t-none ng-hide" ng-show="EmailError">*Campo Obrigatorio</span>
+                                            <span class="error pull-right m-t-none ng-hide" ng-show="EmailInvalid">*Email Inválido</span>
+                                            <input class="form-control ng-pristine ng-untouched ng-valid" id="email-5d6d234eacb694252cf5297d" ng-model="Email" placeholder="Digite seu e-mail" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Mensagem</label>
+                                        <span class="error pull-right m-t-none ng-hide" ng-show="MessageError">*Campo Obrigatorio</span>
+                                        <textarea class="form-control ng-pristine ng-untouched ng-valid" id="message-5d6d234eacb694252cf5297d" ng-model="Message" placeholder="Digite uma mensagem"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn pull-right" ng-click="SendMail()">Enviar Mensagem</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 </div>
