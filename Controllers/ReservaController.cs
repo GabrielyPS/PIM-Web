@@ -1,10 +1,6 @@
-﻿using PIM_Web.Models;
-using PIM_Web.Views.Reserva;
+﻿using PIM_Web.Views.Reserva;
 using Service.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace PIM_Web.Controllers
@@ -33,7 +29,7 @@ namespace PIM_Web.Controllers
 
                 var hospModel = new Hospede
                 {
-                    Cpf =  modelDto.HospCpf,
+                    Cpf = modelDto.HospCpf,
                     Nome = modelDto.HospNome
                 };
                 _reservaService.InsertReserva(model, hospModel);
@@ -44,5 +40,5 @@ namespace PIM_Web.Controllers
                 return View();
             }
         }
-   }
+    }
 }
